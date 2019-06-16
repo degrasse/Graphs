@@ -2,14 +2,6 @@ import java.util.ArrayList;
 
 public class Graph {
 
-	// for each Vertex
-	// there is a list of edges
-	
-	// Definition of Graph is G = (V, E)
-	// so we need to keep track of a list of Vertex and a list of Edges
-	
-	// for each Vertex
-	// there is a list of edges
 	ArrayList<Vertex> vertices;
 	ArrayList<Edge> edges;
 	
@@ -19,13 +11,11 @@ public class Graph {
 	}
 	
 	// add vertex into the graph
-	
 	public void addVertex(Vertex v1){
 		// if v1 already exists in the graph
 		// don't add
 		
 		// else, add to the graph
-		
 		if (vertices.contains(v1)){
 			System.out.println("Can't add since v1 already exists.");
 		}
@@ -50,7 +40,6 @@ public class Graph {
 	}
 	
 	// add edge into the graph
-	
 	public void addEdge(Vertex v1, Vertex v2){
 		// if v1 is the same as v2 -> Self loop
 		// don't add
@@ -69,11 +58,9 @@ public class Graph {
 		}
 		// if graph already has the edge
 		// don't add
-		
 	}
 	
 	// does the graph has a certain edge
-	
 	public boolean hasEdge(Vertex v1 ,Vertex v2){
 		// if the graph doesn't contain v1 or v2,
 		// return false
@@ -85,7 +72,6 @@ public class Graph {
 		
 		// else
 		// return true
-		
 	}
 
 	public ArrayList<Edge> getEdge(){
@@ -111,22 +97,16 @@ public class Graph {
 	}
 	
 	// dfs
-	
 	public boolean hasPath(Vertex v1, Vertex v2){
 		return getDFSPath( v1, v2 ) != null;
 	}
 	
 	public ArrayList<Vertex> getDFSPath(Vertex v1, Vertex v2){
-		
-		
 		// reset all the visited vertex to unvisited
-		
 		for (Vertex v: vertices){
 			v.visited = false;
 		}
-		
 		// create a path
-		
 		ArrayList<Vertex> path = new ArrayList<Vertex>();
 		
 		getDFSPath(v1, v2, path);
