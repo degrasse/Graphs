@@ -2,16 +2,11 @@ import java.util.ArrayList;
 
 public class Vertex {
 
-	
-	// a vertex is similar to a node we did before.
-	
-	
 	// fields
 	int value;
 	// all the adjacency vertex or edges
 	// The purpose of using the incidence neighborhood (Edges) rather than the adjacency neighborhood (Vertices) 
 	// was because path-finding and spanning tree algorithms need the edges to function
-	
 	boolean visited;
 	
 	ArrayList<Vertex> neighbors;
@@ -22,7 +17,6 @@ public class Vertex {
 		this.neighbors = new ArrayList<Vertex>();
 		visited = false;
 	}
-	
 	
 	// add a neighbor only if the neighbor hasn't been added yet
 	public void addNeighbor (Vertex v){
@@ -52,7 +46,6 @@ public class Vertex {
 	}
 	
 	// get a specific neighbor with the index
-	
 	public Vertex getNeighbor(int index){
 		return this.neighbors.get(index);
 	}
