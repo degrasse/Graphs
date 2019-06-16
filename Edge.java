@@ -4,9 +4,6 @@ public class Edge {
 	// fields
 	Vertex v1;
 	Vertex v2; // two vertex
-	// weight
-	// you might also interest in the weight of each edge
-	// we will add that later
 	
 	// constructor
 	// you can construct an edge with two adjacent vertices
